@@ -6,886 +6,608 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Eduardo.dev | Portfólio</title>
+    <meta name="description"
+        content="Portfólio de Eduardo Shimono, estudante de tecnologia com foco em desenvolvimento Front-end.">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Eduardo Shimono | Portfólio</title>
 
-    <!-- CSS próprio -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- MENU -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark container py-3">
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
 
-            <a class="navbar-brand fw-bold" href="#inicio">
-                Eduardo.dev
-            </a>
+            <a class="navbar-brand fw-bold" href="#inicio">Eduardo.dev</a>
 
             <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menu">
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false"
+                aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
-
                 <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Início</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre mim</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tecnologias">Tecnologias</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conhecimentos">Conhecimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
 
                 </ul>
-
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
 
-    <main>
-
-        <!-- APRESENTAÇÃO -->
-        <section id="inicio" class="hero-section container py-5">
-
+    <!-- APRESENTAÇÃO -->
+    <header id="inicio" class="hero-section">
+        <div class="container">
             <div class="row align-items-center">
 
                 <div class="col-lg-7">
 
-                    <span class="text-primary fw-semibold">
-                        OLÁ, SEJA BEM-VINDO AO MEU PORTFÓLIO
-                    </span>
+                    <p class="eyebrow">OLÁ, SEJA BEM-VINDO AO MEU PORTFÓLIO</p>
 
-                    <h1 class="display-3 fw-bold text-white mt-3">
-                        Olá, eu sou Eduardo!
-                    </h1>
+                    <h1>Olá, eu sou <span>Eduardo!</span></h1>
 
-                    <h2 class="h3 text-secondary mt-3">
-                        Estudante de tecnologia e desenvolvimento de software.
-                    </h2>
+                    <h2>Estudante de tecnologia e desenvolvedor Front-end em formação.</h2>
 
-                    <p class="text-secondary mt-4">
-                        Estou construindo minha trajetória na área de
-                        tecnologia, aprendendo programação e desenvolvendo
-                        projetos para transformar ideias em soluções.
+                    <p>
+                        Tenho interesse em desenvolvimento de software e na criação
+                        de sites. Estou sempre buscando aprender novas tecnologias
+                        e transformar meus conhecimentos em projetos.
                     </p>
 
-                    <a href="#sobre" class="btn btn-primary mt-3">
-                        Conheça minha trajetória
-                    </a>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">
+                            Conheça meus projetos
+                        </a>
+
+                        <a href="#contato" class="btn btn-outline-primary">
+                            Entre em contato
+                        </a>
+                    </div>
 
                 </div>
 
                 <div class="col-lg-5 text-center mt-5 mt-lg-0">
 
-                    <div class="hero-image-placeholder">
-                        <span class="text-secondary">
-                            Minha foto
-                        </span>
-                    </div>
+                    <img
+                        src="assets/img/perfil.png"
+                        alt="Foto de perfil de Eduardo Shimono"
+                        class="foto-perfil"
+                    >
 
                 </div>
 
             </div>
+        </div>
+    </header>
 
+
+    <main>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="section-padding">
+            <div class="container">
+
+                <h2 class="section-title">Sobre mim</h2>
+
+                <div class="content-box">
+
+                    <p>
+                        Sou estudante do Ensino Médio e estudo programação.
+                        Tenho interesse em desenvolvimento de software,
+                        principalmente Java e desenvolvimento Front-end.
+                    </p>
+
+                    <p>
+                        Gosto de aprender novas tecnologias, desenvolver projetos
+                        e colocar em prática os conhecimentos adquiridos durante
+                        meus estudos.
+                    </p>
+
+                    <p>
+                        Meu objetivo é me tornar desenvolvedor Front-end e trabalhar
+                        com a criação de sites, desenvolvendo interfaces funcionais,
+                        organizadas e acessíveis.
+                    </p>
+
+                </div>
+
+            </div>
         </section>
 
 
-        <!-- SOBRE MIM -->
-        <section id="sobre" class="about-section container py-5">
+        <!-- EXPERIÊNCIA -->
+        <section id="experiencia" class="section-padding section-alternate">
+            <div class="container">
 
-            <div class="section-title mb-4">
+                <h2 class="section-title">Experiências e atividades</h2>
 
-                <span class="text-primary fw-semibold">
-                    UM POUCO SOBRE MIM
-                </span>
+                <div class="card experience-card">
+                    <div class="card-body">
 
-                <h2 class="text-white fw-bold mt-2">
-                    Sobre mim
-                </h2>
+                        <span class="experience-tag">Workshop</span>
 
-            </div>
+                        <h3>Workshop de Python e Pandas</h3>
 
-            <div class="row g-4">
+                        <p class="experience-place">Senac Nações Unidas</p>
 
-                <div class="col-lg-7">
+                        <p>
+                            Participei de um workshop no Senac Nações Unidas,
+                            apresentando para alunos conceitos de manipulação
+                            de dados utilizando Python e a biblioteca Pandas.
+                        </p>
 
-                    <p class="text-secondary">
-                        Sou estudante do Ensino Médio e tenho interesse
-                        pela área de tecnologia. Atualmente, estou
-                        desenvolvendo meus conhecimentos em programação,
-                        principalmente em Java e desenvolvimento Front-end.
-                    </p>
-
-                    <p class="text-secondary">
-                        Gosto de aprender coisas novas, entender como os
-                        sistemas funcionam e colocar meus conhecimentos
-                        em prática por meio de projetos.
-                    </p>
-
-                    <p class="text-secondary">
-                        Meu objetivo é me tornar um desenvolvedor Java,
-                        continuar evoluindo profissionalmente e construir
-                        soluções que possam ajudar outras pessoas.
-                    </p>
-
-                </div>
-
-                <div class="col-lg-5">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h4 text-white mb-4">
-                                Minha trajetória
-                            </h3>
-
-                            <p class="text-secondary">
-                                <strong class="text-white">Formação:</strong>
-                                Ensino Médio
-                            </p>
-
-                            <p class="text-secondary">
-                                <strong class="text-white">Área:</strong>
-                                Tecnologia da Informação
-                            </p>
-
-                            <p class="text-secondary">
-                                <strong class="text-white">Objetivo:</strong>
-                                Desenvolvedor Java
-                            </p>
-
-                            <p class="text-secondary mb-0">
-                                <strong class="text-white">Estudando:</strong>
-                                Java e Front-end
-                            </p>
-
-                        </div>
+                        <p>
+                            Durante a atividade, apresentei um exemplo prático
+                            de código para demonstrar como trabalhar com dados
+                            e organizar informações em tabelas.
+                        </p>
 
                     </div>
-
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- HABILIDADES -->
-        <section id="habilidades" class="skills-section container py-5">
+        <section id="habilidades" class="section-padding">
+            <div class="container">
 
-            <div class="section-title mb-5">
+                <h2 class="section-title">Minhas habilidades</h2>
 
-                <span class="text-primary fw-semibold">
-                    MEUS CONHECIMENTOS
-                </span>
+                <div class="row g-4">
 
-                <h2 class="text-white fw-bold mt-2">
-                    Habilidades
-                </h2>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
 
-            </div>
+                                <h3>Hard Skills</h3>
 
-            <div class="row g-4">
+                                <p>Conhecimentos técnicos que venho desenvolvendo:</p>
 
-                <!-- HARD SKILLS -->
-                <div class="col-lg-6">
+                                <ul class="skill-list">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>Git e GitHub</li>
+                                </ul>
 
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h4 text-white mb-4">
-                                Hard Skills
-                            </h3>
-
-                            <div class="mb-3">
-                                <h4 class="h6 text-white">Java</h4>
-                                <p class="text-secondary">
-                                    Conhecimentos em programação
-                                    orientada a objetos.
-                                </p>
                             </div>
-
-                            <div class="mb-3">
-                                <h4 class="h6 text-white">HTML5</h4>
-                                <p class="text-secondary">
-                                    Estruturação de páginas web.
-                                </p>
-                            </div>
-
-                            <div class="mb-3">
-                                <h4 class="h6 text-white">CSS3</h4>
-                                <p class="text-secondary">
-                                    Estilização e organização visual
-                                    de páginas.
-                                </p>
-                            </div>
-
-                            <div class="mb-3">
-                                <h4 class="h6 text-white">JavaScript</h4>
-                                <p class="text-secondary">
-                                    Em aprendizado.
-                                </p>
-                            </div>
-
-                            <div class="mb-3">
-                                <h4 class="h6 text-white">Python</h4>
-                                <p class="text-secondary">
-                                    Conhecimentos iniciais na linguagem.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h4 class="h6 text-white">Git e GitHub</h4>
-                                <p class="text-secondary mb-0">
-                                    Versionamento e organização de projetos.
-                                </p>
-                            </div>
-
                         </div>
-
                     </div>
 
-                </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
 
+                                <h3>Soft Skills</h3>
 
-                <!-- SOFT SKILLS -->
-                <div class="col-lg-6">
+                                <p>Habilidades pessoais que fazem parte da minha forma de trabalhar:</p>
 
-                    <div class="card bg-dark border-secondary h-100">
+                                <ul class="skill-list">
+                                    <li>Comunicação</li>
+                                    <li>Escuta ativa</li>
+                                    <li>Aprendizado contínuo</li>
+                                    <li>Resolução de problemas</li>
+                                </ul>
 
-                        <div class="card-body p-4">
-
-                            <h3 class="h4 text-white mb-4">
-                                Soft Skills
-                            </h3>
-
-                            <div class="mb-4">
-                                <h4 class="h6 text-white">
-                                    Comunicação
-                                </h4>
-                                <p class="text-secondary">
-                                    Facilidade para apresentar ideias
-                                    e explicar conteúdos.
-                                </p>
                             </div>
-
-                            <div class="mb-4">
-                                <h4 class="h6 text-white">
-                                    Escuta ativa
-                                </h4>
-                                <p class="text-secondary">
-                                    Capacidade de ouvir e compreender
-                                    diferentes opiniões.
-                                </p>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="h6 text-white">
-                                    Aprendizado contínuo
-                                </h4>
-                                <p class="text-secondary">
-                                    Interesse em aprender e desenvolver
-                                    novas habilidades.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h4 class="h6 text-white">
-                                    Resolução de problemas
-                                </h4>
-                                <p class="text-secondary mb-0">
-                                    Busca por soluções de forma lógica
-                                    e organizada.
-                                </p>
-                            </div>
-
                         </div>
-
                     </div>
 
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- ÁREAS DO CONHECIMENTO -->
-        <section id="conhecimentos" class="container py-5">
+        <section id="conhecimentos" class="section-padding section-alternate">
+            <div class="container">
 
-            <div class="section-title text-center mb-5">
+                <h2 class="section-title">Áreas do conhecimento</h2>
 
-                <span class="text-primary fw-semibold">
-                    ENSINO MÉDIO
-                </span>
-
-                <h2 class="text-white fw-bold mt-2">
-                    Áreas do Conhecimento
-                </h2>
-
-                <p class="text-secondary">
-                    Conheça como cada área do conhecimento se relaciona
-                    com a lógica de programação.
+                <p class="section-description">
+                    As disciplinas do Ensino Médio também contribuem para o
+                    desenvolvimento de habilidades importantes na programação,
+                    como interpretação, raciocínio lógico e resolução de problemas.
                 </p>
 
+                <div class="row g-4 mt-2">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Ciências Humanas</h3>
+                                <p>
+                                    História, Geografia, Filosofia e Sociologia
+                                    ajudam a compreender a sociedade e os impactos
+                                    da tecnologia nas relações humanas.
+                                </p>
+                                <a href="pages/humanas.html" class="btn btn-primary mt-auto">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Ciências da Natureza</h3>
+                                <p>
+                                    Biologia, Física e Química desenvolvem o
+                                    pensamento científico, a observação e a
+                                    análise de fenômenos.
+                                </p>
+                                <a href="pages/natureza.html" class="btn btn-primary mt-auto">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Matemática</h3>
+                                <p>
+                                    A Matemática contribui para o raciocínio lógico,
+                                    a interpretação de problemas e a criação
+                                    de algoritmos.
+                                </p>
+                                <a href="pages/matematica.html" class="btn btn-primary mt-auto">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Linguagens</h3>
+                                <p>
+                                    Português e Inglês contribuem para a comunicação,
+                                    interpretação de informações e compreensão
+                                    de conteúdos técnicos.
+                                </p>
+                                <a href="pages/linguagens.html" class="btn btn-primary mt-auto">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="row g-4">
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Ciências Humanas
-                            </h3>
-
-                            <p class="text-secondary">
-                                História, Geografia, Filosofia e Sociologia
-                                ajudam a desenvolver o pensamento crítico
-                                e a compreensão da sociedade.
-                            </p>
-
-                            <a href="pages/humanas.html"
-                                class="btn btn-outline-primary mt-2">
-                                Conhecer área
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Ciências da Natureza
-                            </h3>
-
-                            <p class="text-secondary">
-                                Biologia, Física e Química trabalham
-                                a observação, a análise e a resolução
-                                de problemas.
-                            </p>
-
-                            <a href="pages/natureza.html"
-                                class="btn btn-outline-primary mt-2">
-                                Conhecer área
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Matemática
-                            </h3>
-
-                            <p class="text-secondary">
-                                Cálculos, variáveis, estatística e lógica
-                                matemática possuem uma forte relação
-                                com a programação.
-                            </p>
-
-                            <a href="pages/matematica.html"
-                                class="btn btn-outline-primary mt-2">
-                                Conhecer área
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Linguagens
-                            </h3>
-
-                            <p class="text-secondary">
-                                Comunicação, interpretação e criatividade
-                                são habilidades importantes para
-                                desenvolver softwares.
-                            </p>
-
-                            <a href="pages/linguagens.html"
-                                class="btn btn-outline-primary mt-2">
-                                Conhecer área
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </section>
 
 
         <!-- TENDÊNCIAS TECNOLÓGICAS -->
-        <section id="tecnologias" class="container py-5">
+        <section id="tecnologias" class="section-padding">
+            <div class="container">
 
-            <div class="section-title mb-5">
+                <h2 class="section-title">Tendências tecnológicas</h2>
 
-                <span class="text-primary fw-semibold">
-                    INOVAÇÃO E FUTURO
-                </span>
-
-                <h2 class="text-white fw-bold mt-2">
-                    Tendências Tecnológicas
-                </h2>
-
-                <p class="text-secondary">
-                    Algumas tecnologias que estão transformando
-                    o mercado e o desenvolvimento de software.
+                <p class="section-description">
+                    Algumas tecnologias estão transformando a maneira como
+                    vivemos, trabalhamos e utilizamos os sistemas digitais.
                 </p>
 
+                <div class="row g-4 mt-2">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Cibersegurança</h3>
+                                <p>
+                                    Área responsável por proteger sistemas,
+                                    redes e informações contra ameaças digitais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Blockchain</h3>
+                                <p>
+                                    Tecnologia que permite registrar informações
+                                    de maneira distribuída e verificável.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Automação e Robótica</h3>
+                                <p>
+                                    Uso de sistemas e máquinas para executar
+                                    tarefas com maior autonomia e eficiência.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3>Edge Computing</h3>
+                                <p>
+                                    Processamento de dados próximo ao local
+                                    onde são gerados, reduzindo a dependência
+                                    de servidores distantes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="row g-4">
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Cibersegurança
-                            </h3>
-
-                            <p class="text-secondary mb-0">
-                                Área responsável por proteger sistemas,
-                                redes e informações contra ameaças digitais.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Blockchain
-                            </h3>
-
-                            <p class="text-secondary mb-0">
-                                Tecnologia que permite registrar informações
-                                de maneira distribuída e verificável.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Automação e Robótica
-                            </h3>
-
-                            <p class="text-secondary mb-0">
-                                Utilização de sistemas e máquinas para
-                                executar tarefas de forma automatizada.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4">
-
-                            <h3 class="h5 text-white">
-                                Edge Computing
-                            </h3>
-
-                            <p class="text-secondary mb-0">
-                                Processamento de dados próximo de onde
-                                eles são produzidos, reduzindo atrasos.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </section>
 
 
         <!-- PROJETOS -->
-        <section id="projetos" class="container py-5">
+        <section id="projetos" class="section-padding section-alternate">
+            <div class="container">
 
-            <div class="section-title mb-5">
+                <h2 class="section-title">Meus projetos</h2>
 
-                <span class="text-primary fw-semibold">
-                    MEU TRABALHO
-                </span>
-
-                <h2 class="text-white fw-bold mt-2">
-                    Meus Projetos
-                </h2>
-
-                <p class="text-secondary">
-                    Projetos desenvolvidos durante minha jornada
-                    de aprendizado em programação.
+                <p class="section-description">
+                    Alguns projetos desenvolvidos durante meus estudos,
+                    que representam minha evolução na programação.
                 </p>
 
-            </div>
+                <div class="row g-4 mt-2">
 
-            <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
 
+                                <span class="project-category">Java</span>
 
-                <!-- PROJETO 1: ORIENTAÇÃO A OBJETOS -->
-                <div class="col-md-6 col-lg-3">
+                                <h3>Orientação a Objetos</h3>
 
-                    <div class="card bg-dark border-secondary h-100">
+                                <p>
+                                    Projeto com exercícios e aplicações dos
+                                    conceitos de programação orientada a objetos,
+                                    como classes, objetos e métodos.
+                                </p>
 
-                        <div class="card-body p-4 d-flex flex-column">
+                                <a href="https://github.com/EduardoShimono/Orienta-o-a-objeto-"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary mt-auto">
+                                    Ver no GitHub
+                                </a>
 
-                            <span class="badge bg-primary mb-3 align-self-start">
-                                Java
-                            </span>
-
-                            <h3 class="h5 text-white">
-                                Orientação a Objetos
-                            </h3>
-
-                            <p class="text-secondary">
-                                Projeto com exercícios iniciais de
-                                Programação Orientada a Objetos em Java,
-                                explorando conceitos fundamentais
-                                da linguagem.
-                            </p>
-
-                            <p class="text-secondary small">
-                                Tecnologia: Java
-                            </p>
-
-                            <a href="https://github.com/EduardoShimono/Orienta-o-a-objeto-"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-outline-primary mt-auto">
-                                Ver no GitHub
-                            </a>
-
+                            </div>
                         </div>
+                    </div>
 
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+
+                                <span class="project-category">E-commerce</span>
+
+                                <h3>Arena Games</h3>
+
+                                <p>
+                                    Projeto de e-commerce desenvolvido como
+                                    desafio, envolvendo conceitos de criação
+                                    e organização de uma aplicação de comércio
+                                    eletrônico.
+                                </p>
+
+                                <a href="https://github.com/EduardoShimono/e-commerce_challenge_de_T.i"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary mt-auto">
+                                    Ver no GitHub
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+
+                                <span class="project-category">Java e API</span>
+
+                                <h3>Consultor de CEP</h3>
+
+                                <p>
+                                    Aplicação que utiliza uma API de consulta
+                                    de CEP para buscar informações de endereço
+                                    a partir de um código postal.
+                                </p>
+
+                                <a href="https://github.com/EduardoShimono/consultor-de-CEP"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary mt-auto">
+                                    Ver no GitHub
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+
+                                <span class="project-category">Projeto de TI</span>
+
+                                <h3>Sistema de Agendamento</h3>
+
+                                <p>
+                                    Sistema desenvolvido para organizar
+                                    agendamentos, horários e informações
+                                    de clientes.
+                                </p>
+
+                                <a href="https://github.com/EduardoShimono/Projeto_De_Ti_2Bi_agendamento"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary mt-auto">
+                                    Ver no GitHub
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-
-                <!-- PROJETO 2: E-COMMERCE -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4 d-flex flex-column">
-
-                            <span class="badge bg-primary mb-3 align-self-start">
-                                Java e Web
-                            </span>
-
-                            <h3 class="h5 text-white">
-                                Arena Games
-                            </h3>
-
-                            <p class="text-secondary">
-                                E-commerce de games com vitrine de produtos,
-                                carrinho, cadastro, login, checkout
-                                e painel administrativo.
-                            </p>
-
-                            <p class="text-secondary small">
-                                Tecnologias: Java, HTML, CSS, JavaScript,
-                                Bootstrap e MySQL.
-                            </p>
-
-                            <a href="https://github.com/EduardoShimono/e-commerce_challenge_de_T.i"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-outline-primary mt-auto">
-                                Ver no GitHub
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROJETO 3: CONSULTOR DE CEP -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4 d-flex flex-column">
-
-                            <span class="badge bg-primary mb-3 align-self-start">
-                                Java e API
-                            </span>
-
-                            <h3 class="h5 text-white">
-                                Consultor de CEP
-                            </h3>
-
-                            <p class="text-secondary">
-                                Aplicação que utiliza a API ViaCEP
-                                para consultar um CEP e retornar
-                                informações de endereço.
-                            </p>
-
-                            <p class="text-secondary small">
-                                Tecnologia: Java e consumo de API.
-                            </p>
-
-                            <a href="https://github.com/EduardoShimono/consultor-de-CEP"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-outline-primary mt-auto">
-                                Ver no GitHub
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROJETO 4: AGENDAMENTO -->
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="card bg-dark border-secondary h-100">
-
-                        <div class="card-body p-4 d-flex flex-column">
-
-                            <span class="badge bg-primary mb-3 align-self-start">
-                                Projeto de TI
-                            </span>
-
-                            <h3 class="h5 text-white">
-                                Sistema de Agendamento
-                            </h3>
-
-                            <p class="text-secondary">
-                                Projeto desenvolvido para trabalhar
-                                a organização de agendamentos,
-                                horários e informações de clientes.
-                            </p>
-
-                            <p class="text-secondary small">
-                                Projeto acadêmico de Tecnologia da Informação.
-                            </p>
-
-                            <a href="https://github.com/EduardoShimono/Projeto_De_Ti_2Bi_agendamento"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-outline-primary mt-auto">
-                                Ver no GitHub
-                            </a>
-
-                        </div>
-
-                    </div>
-
+                <div class="text-center mt-5">
+                    <a href="https://github.com/EduardoShimono"
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-primary">
+                        Ver todos os meus repositórios
+                    </a>
                 </div>
 
             </div>
-
-
-            <!-- LINK PARA TODOS OS REPOSITÓRIOS -->
-            <div class="text-center mt-5">
-
-                <p class="text-secondary">
-                    Quer conhecer outros projetos e acompanhar
-                    minha evolução na programação?
-                </p>
-
-                <a href="https://github.com/EduardoShimono"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-primary">
-                    Ver meu perfil completo no GitHub
-                </a>
-
-            </div>
-
         </section>
 
 
         <!-- CONTATO -->
-        <section id="contato" class="container py-5">
+        <section id="contato" class="section-padding">
+            <div class="container">
 
-            <div class="section-title mb-5">
+                <h2 class="section-title">Entre em contato</h2>
 
-                <span class="text-primary fw-semibold">
-                    VAMOS CONVERSAR?
-                </span>
-
-                <h2 class="text-white fw-bold mt-2">
-                    Entre em contato
-                </h2>
-
-                <p class="text-secondary">
-                    Utilize o formulário abaixo para enviar uma mensagem.
+                <p class="section-description">
+                    Tem alguma dúvida ou deseja conversar sobre tecnologia?
+                    Envie uma mensagem pelo formulário.
                 </p>
 
-            </div>
+                <div class="row g-4">
 
-            <div class="row">
+                    <div class="col-lg-5">
 
-                <div class="col-lg-8">
+                        <div class="contact-info">
 
-                    <form id="formContato">
+                            <h3>Me encontre também</h3>
 
-                        <div class="mb-3">
+                            <p>
+                                Você pode conhecer mais sobre meus estudos
+                                e projetos pelos meus perfis.
+                            </p>
 
-                            <label for="nome" class="form-label text-white">
-                                Nome
-                            </label>
+                            <a href="https://github.com/EduardoShimono"
+                                target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                GitHub
+                            </a>
 
-                            <input type="text" id="nome" name="nome"
-                                class="form-control"
-                                placeholder="Digite seu nome" required>
-
-                        </div>
-
-                        <div class="mb-3">
-
-                            <label for="email" class="form-label text-white">
-                                E-mail
-                            </label>
-
-                            <input type="email" id="email" name="email"
-                                class="form-control"
-                                placeholder="Digite seu e-mail" required>
+                            <a href="https://www.linkedin.com/in/eduardo-shimono-467898377/"
+                                target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                LinkedIn
+                            </a>
 
                         </div>
 
-                        <div class="mb-3">
+                    </div>
 
-                            <label for="mensagem" class="form-label text-white">
-                                Mensagem
-                            </label>
+                    <div class="col-lg-7">
 
-                            <textarea id="mensagem" name="mensagem"
-                                class="form-control" rows="5"
-                                placeholder="Escreva sua mensagem"
-                                required></textarea>
+                        <form id="formContato">
 
-                        </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control"
+                                    id="nome" name="nome"
+                                    placeholder="Digite seu nome"
+                                    maxlength="80" required>
+                            </div>
 
-                        <button type="submit" class="btn btn-primary">
-                            Enviar mensagem
-                        </button>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control"
+                                    id="email" name="email"
+                                    placeholder="Digite seu e-mail"
+                                    maxlength="120" required>
+                            </div>
 
-                    </form>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control"
+                                    id="mensagem" name="mensagem"
+                                    rows="5" maxlength="1000"
+                                    placeholder="Escreva sua mensagem"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Enviar mensagem
+                            </button>
+
+                            <p id="statusFormulario" class="form-status"
+                                aria-live="polite"></p>
+
+                        </form>
+
+                    </div>
 
                 </div>
-
             </div>
-
         </section>
 
     </main>
 
 
     <!-- RODAPÉ -->
-    <footer class="container text-center py-4">
+    <footer class="text-center py-4">
+        <div class="container">
 
-        <p class="text-secondary mb-0">
-            Eduardo.dev | Portfólio
-        </p>
+            <p class="mb-1">Desenvolvido por Eduardo Shimono</p>
 
-        <p class="text-secondary mt-2 mb-0">
-            Desenvolvido por Eduardo.
-        </p>
+            <p class="mb-2">
+                © 2026 - Todos os direitos reservados.
+            </p>
 
+            <a href="https://github.com/EduardoShimono"
+                target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <span class="footer-separator">|</span>
+
+            <a href="https://www.linkedin.com/in/eduardo-shimono-467898377/"
+                target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+        </div>
     </footer>
 
 
-    <!-- JAVASCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JAVASCRIPT PRÓPRIO -->
     <script src="js/script.js"></script>
 
 </body>

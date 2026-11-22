@@ -1,7 +1,7 @@
 
-/* ========================================
+/* =====================================
    CONFIGURAÇÕES GERAIS
-======================================== */
+===================================== */
 
 * {
     margin: 0;
@@ -11,14 +11,18 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 85px;
 }
 
 body {
     background-color: #0B0F19;
     color: #F9FAFB;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
+}
+
+p {
+    color: #9CA3AF;
 }
 
 a {
@@ -26,22 +30,24 @@ a {
 }
 
 
-/* ========================================
-   MENU DE NAVEGAÇÃO
-======================================== */
+/* =====================================
+   MENU
+===================================== */
 
-header {
-    background-color: #0B0F19;
+.navbar {
+    background-color: #111827;
     border-bottom: 1px solid #1F2937;
+    padding: 15px 0;
 }
 
 .navbar-brand {
     color: #F9FAFB !important;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .nav-link {
     color: #9CA3AF !important;
+    margin-left: 8px;
     transition: 0.3s;
 }
 
@@ -50,14 +56,175 @@ header {
 }
 
 
-/* ========================================
+/* =====================================
+   APRESENTAÇÃO
+===================================== */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 70px;
+    background: linear-gradient(135deg, #0B0F19 60%, #111D35 100%);
+}
+
+.eyebrow {
+    color: #3B82F6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+.hero-section h1 {
+    color: #F9FAFB;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 span {
+    color: #3B82F6;
+}
+
+.hero-section h2 {
+    color: #D1D5DB;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    max-width: 600px;
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+
+/* =====================================
+   FOTO DE PERFIL
+===================================== */
+
+.foto-perfil {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 22px;
+    margin: 0 auto;
+    border: 2px solid #2563EB;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.02);
+}
+
+
+/* =====================================
+   SEÇÕES
+===================================== */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-alternate {
+    background-color: #0E1524;
+}
+
+.section-title {
+    color: #F9FAFB;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 65px;
+    height: 4px;
+    background-color: #2563EB;
+    border-radius: 5px;
+}
+
+.section-description {
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.content-box {
+    max-width: 900px;
+}
+
+
+/* =====================================
+   CARTÕES
+===================================== */
+
+.card {
+    background-color: #111827;
+    color: #F9FAFB;
+    border: 1px solid #1F2937;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #2563EB;
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    color: #F9FAFB;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+.card ul {
+    padding-left: 20px;
+    color: #9CA3AF;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
    BOTÕES
-======================================== */
+===================================== */
 
 .btn-primary {
     background-color: #2563EB;
     border-color: #2563EB;
-    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -68,230 +235,141 @@ header {
 }
 
 .btn-outline-primary {
-    color: #60A5FA;
+    color: #3B82F6;
     border-color: #2563EB;
-    transition: 0.3s;
+    border-radius: 8px;
+    padding: 10px 20px;
 }
 
 .btn-outline-primary:hover {
     background-color: #2563EB;
     border-color: #2563EB;
     color: #FFFFFF;
-    transform: translateY(-2px);
-}
-
-.btn-outline-light {
-    transition: 0.3s;
 }
 
 
-/* ========================================
-   APRESENTAÇÃO INICIAL
-======================================== */
+/* =====================================
+   EXPERIÊNCIA
+===================================== */
 
-.hero-section {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
+.experience-card {
+    max-width: 850px;
 }
 
-.hero-section h1 {
-    line-height: 1.2;
-}
-
-.hero-image-placeholder {
-    width: 260px;
-    height: 260px;
-    margin: auto;
-    border: 2px dashed #374151;
-    border-radius: 50%;
-    background-color: #111827;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* ========================================
-   TÍTULOS DAS SEÇÕES
-======================================== */
-
-.section-title {
-    margin-bottom: 30px;
-}
-
-.section-title h2 {
-    font-size: 2.2rem;
-}
-
-.section-title p {
-    max-width: 650px;
-    margin-top: 10px;
-}
-
-.section-title.text-center p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* ========================================
-   SOBRE MIM
-======================================== */
-
-.about-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-
-/* ========================================
-   HABILIDADES
-======================================== */
-
-.skills-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-
-/* ========================================
-   CARTÕES
-======================================== */
-
-.card {
-    background-color: #111827 !important;
-    border: 1px solid #263244 !important;
-    border-radius: 12px;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #2563EB !important;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.card h3 {
-    line-height: 1.4;
-}
-
-.card p {
-    line-height: 1.7;
-}
-
-
-/* ========================================
-   ÁREAS DO CONHECIMENTO
-======================================== */
-
-#conhecimentos {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-#conhecimentos .card {
-    min-height: 290px;
-}
-
-#conhecimentos .card-body {
-    align-items: flex-start;
-}
-
-#conhecimentos .btn {
-    margin-top: auto;
-}
-
-
-/* ========================================
-   TENDÊNCIAS TECNOLÓGICAS
-======================================== */
-
-#tecnologias {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-#tecnologias .card {
-    min-height: 230px;
-}
-
-
-/* ========================================
-   PROJETOS
-======================================== */
-
-#projetos {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-#projetos .card {
-    min-height: 100%;
-}
-
-#projetos .card-body {
-    align-items: flex-start;
-}
-
-#projetos .card h3 {
+.experience-tag,
+.project-category {
+    display: inline-block;
+    width: fit-content;
+    color: #60A5FA;
+    background-color: rgba(37, 99, 235, 0.15);
+    border: 1px solid rgba(37, 99, 235, 0.35);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-#projetos .card p {
-    font-size: 0.95rem;
+.experience-place {
+    color: #60A5FA;
+    font-weight: bold;
 }
 
-#projetos .card .small {
-    font-size: 0.8rem;
-    color: #9CA3AF !important;
+
+/* =====================================
+   HABILIDADES
+===================================== */
+
+.skill-list li::marker {
+    color: #3B82F6;
 }
 
-#projetos .badge {
-    padding: 8px 12px;
-    font-weight: 500;
+
+/* =====================================
+   CONHECIMENTOS
+===================================== */
+
+#conhecimentos .card {
+    min-height: 340px;
 }
 
-#projetos .btn {
-    width: 100%;
+#conhecimentos .card .btn {
+    align-self: flex-start;
     margin-top: auto;
 }
 
-#projetos .text-center .btn {
-    width: auto;
+
+/* =====================================
+   TECNOLOGIAS
+===================================== */
+
+#tecnologias .card {
+    min-height: 245px;
 }
 
 
-/* ========================================
-   FORMULÁRIO DE CONTATO
-======================================== */
+/* =====================================
+   PROJETOS
+===================================== */
 
-#contato {
-    padding-top: 70px;
-    padding-bottom: 70px;
+#projetos .card {
+    min-height: 390px;
+}
+
+#projetos .card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+/* =====================================
+   CONTATO
+===================================== */
+
+.contact-info {
+    background-color: #111827;
+    border: 1px solid #1F2937;
+    border-radius: 14px;
+    padding: 25px;
+    height: 100%;
+}
+
+.contact-info h3 {
+    color: #F9FAFB;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.social-link {
+    display: block;
+    color: #60A5FA;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: #93C5FD;
+    transform: translateX(4px);
 }
 
 .form-label {
-    font-weight: 600;
+    color: #F9FAFB;
+    font-weight: bold;
 }
 
 .form-control {
     background-color: #111827;
     border: 1px solid #374151;
     color: #F9FAFB;
-    padding: 12px;
     border-radius: 8px;
+    padding: 12px;
 }
 
 .form-control:focus {
     background-color: #111827;
-    border-color: #2563EB;
     color: #F9FAFB;
+    border-color: #2563EB;
     box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.2);
 }
 
@@ -299,98 +377,166 @@ header {
     color: #6B7280;
 }
 
-textarea.form-control {
-    resize: vertical;
+.form-status {
+    margin-top: 15px;
+    font-size: 0.95rem;
 }
 
 
-/* ========================================
+/* =====================================
    RODAPÉ
-======================================== */
+===================================== */
 
 footer {
+    background-color: #111827;
     border-top: 1px solid #1F2937;
-    margin-top: 30px;
+}
+
+footer p {
+    color: #9CA3AF;
+}
+
+footer a {
+    color: #3B82F6;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #60A5FA;
+}
+
+.footer-separator {
+    color: #6B7280;
+    margin: 0 8px;
 }
 
 
-/* ========================================
-   PÁGINAS DAS ÁREAS DO CONHECIMENTO
-======================================== */
+/* =====================================
+   PÁGINAS INTERNAS
+===================================== */
 
 main.container {
     min-height: 70vh;
 }
 
+main h1,
+main h2,
+main h3 {
+    color: #F9FAFB;
+}
 
-/* ========================================
+
+/* =====================================
    RESPONSIVIDADE
-======================================== */
+===================================== */
 
 @media (max-width: 991px) {
 
-    .navbar-nav {
-        padding-top: 15px;
-    }
-
-    .nav-link {
-        padding: 10px 0;
-    }
-
     .hero-section {
         text-align: center;
+        padding-top: 130px;
     }
 
-}
-
-@media (max-width: 768px) {
-
-    .hero-section {
-        min-height: auto;
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
+    .hero-section p {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .hero-section h1 {
-        font-size: 2.5rem;
+    .hero-buttons {
+        justify-content: center;
     }
 
-    .hero-section h2 {
-        font-size: 1.3rem;
+    .foto-perfil {
+        max-width: 300px;
     }
 
-    .hero-image-placeholder {
-        width: 210px;
-        height: 210px;
-    }
-
-    .section-title h2 {
-        font-size: 1.8rem;
-    }
-
-    #projetos .card {
-        min-height: auto;
+    .section-padding {
+        padding: 70px 0;
     }
 
 }
 
 @media (max-width: 576px) {
 
+    .hero-section {
+        min-height: auto;
+        padding: 125px 0 65px;
+    }
+
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
-    .hero-image-placeholder {
-        width: 180px;
-        height: 180px;
+    .hero-section h2 {
+        font-size: 1.2rem;
     }
 
-    .section-title h2 {
-        font-size: 1.6rem;
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .foto-perfil {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 
     .card-body {
         padding: 20px;
     }
 
+    #conhecimentos .card,
+    #tecnologias .card,
+    #projetos .card {
+        min-height: auto;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+}
+
+/* =====================================
+   PAINEL ADMINISTRATIVO
+===================================== */
+
+.admin-page {
+    padding-top: 110px !important;
+}
+
+.admin-page h1 {
+    color: #F9FAFB;
+    font-weight: bold;
+}
+
+.admin-page .card {
+    margin-bottom: 25px;
+}
+
+.admin-total {
+    color: #60A5FA;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.admin-page .table {
+    min-width: 850px;
+}
+
+.admin-page .table td {
+    color: #D1D5DB;
+    max-width: 280px;
+    overflow-wrap: anywhere;
 }
